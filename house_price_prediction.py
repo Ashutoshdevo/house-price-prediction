@@ -49,4 +49,23 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 print(f'Training data shape: {X_train.shape}')
 print(f'Test data shape: {X_test.shape}')
 
+from sklearn.linear_model import LinearRegression
+
+# Create an instance of the Linear Regression model
+model = LinearRegression()
+
+# Train the model with the training data
+model.fit(X_train, y_train)
+
+# Print the coefficients (weights) for each feature
+print(f'Coefficients: {model.coef_}')
+
+# Print the intercept
+print(f'Intercept: {model.intercept_}')
+
+# Make predictions using the test data
+y_pred = model.predict(X_test)
+
+# Print the first 10 predicted house prices
+print(f'Predicted House Prices: {y_pred[:10]}')
 
