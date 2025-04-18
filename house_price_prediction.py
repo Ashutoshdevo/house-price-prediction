@@ -93,3 +93,13 @@ plt.ylabel("Predicted Prices")
 plt.title("Actual vs Predicted Prices")
 plt.grid(True)
 plt.show()
+
+# To save the trained Model 
+import pickle
+
+# Save the model to disk
+filename = 'house_price_model.pkl'
+with open(filename, 'wb') as file:
+    pickle.dump(model, file)
+
+print("Model saved successfully!")
