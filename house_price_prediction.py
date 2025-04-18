@@ -81,3 +81,15 @@ print(f'Mean Squared Error (MSE): {mse}')
 print(f'R-squared (R²): {r2}')
 
 
+import matplotlib.pyplot as plt
+
+# Predict the values for X_test
+y_pred = model.predict(X_test)
+
+# Plotting Actual vs Predicted
+plt.scatter(y_test, y_pred, color='blue')
+plt.xlabel("Actual Prices")
+plt.ylabel("Predicted Prices")
+plt.title("Actual vs Predicted Prices")
+plt.grid(True)
+plt.show()
