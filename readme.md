@@ -35,5 +35,22 @@ This is a simple Machine Learning project that predicts house prices using the C
 - Matplotlib
 - Pickle
 
+📦 Model Saving Using Pickle
+After training the model, we saved it using the pickle library.
+This allows the trained model to be reused later without retraining, making predictions faster and easier.
+
+Steps followed:
+
+Saving the model:
+We serialized the trained Linear Regression model and saved it into a file named model.pkl.
+
+Benefits:
+
+No need to retrain every time
+
+Easy deployment into web apps
+
+Faster and more efficient predictions
+
 ## Author
 - [Ashutosh](https://github.com/Ashutoshdevo)
