@@ -1,18 +1,39 @@
 # House Price Prediction
 
-This project uses the Boston Housing dataset to predict the price of houses based on features like the number of rooms, crime rate, etc.
+This is a simple Machine Learning project that predicts house prices using the California Housing Dataset.
 
-## Libraries Used
+## Features Used
+- Median Income (MedInc)
+- House Age
+- Average Rooms (AveRooms)
+- Average Bedrooms (AveBedrms)
+- Population
+- Average Occupancy (AveOccup)
+- Latitude
+- Longitude
+
+## Workflow
+1. Loaded and explored the dataset
+2. Preprocessed the data
+3. Split into training and testing sets
+4. Trained a Linear Regression model
+5. Evaluated model performance using:
+   - Mean Squared Error (MSE)
+   - R² Score
+6. Visualized Actual vs Predicted Prices
+7. Saved the trained model using Pickle
+
+## Results
+- **MSE:** 0.5558
+- **R² Score:** 0.5757
+
+## Tools Used
+- Python
+- scikit-learn
 - Pandas
 - Numpy
 - Matplotlib
-- Scikit-learn
+- Pickle
 
-## How to Run
-1. Install the necessary libraries using `pip install -r requirements.txt`
-2. Run `house_price_prediction.py` to see the predictions.
-
-## Progress
-- Data exploration
-- Visualizations
-- Linear Regression Model
+## Author
+- [Ashutosh](https://github.com/Ashutoshdevo)

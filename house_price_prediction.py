@@ -80,3 +80,4 @@ r2 = r2_score(y_test, y_pred)
 print(f'Mean Squared Error (MSE): {mse}')
 print(f'R-squared (R²): {r2}')
 
+
